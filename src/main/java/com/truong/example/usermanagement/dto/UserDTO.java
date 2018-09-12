@@ -2,7 +2,16 @@ package com.truong.example.usermanagement.dto;
 
 public class UserDTO {
     private String username;
+    private String fullname;
     private String password;
+
+    public String getFullname() {
+        return fullname;
+    }
+
+    public void setFullname(String fullname) {
+        this.fullname = fullname;
+    }
 
     public String getUsername() {
         return username;
@@ -19,10 +28,12 @@ public class UserDTO {
     public void setPassword(String password) {
         this.password = password;
     }
+
     @Override
     public String toString() {
         return "UserDTO{" +
                 "username='" + username + '\'' +
+                ", fullname='" + fullname + '\'' +
                 ", password='" + password + '\'' +
                 '}';
     }
